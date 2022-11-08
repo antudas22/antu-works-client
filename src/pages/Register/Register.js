@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FaGoogle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 
 const Register = () => {
+    const {createUser} = useContext(AuthContext);
     const handleRegister = e => {
         e.preventDefault();
+        const form = e.target;
+        const email = form.email.value;
+        const password = form.password.value;
+
+        createUser(email, password)
+        .then(result => {
+            const user = result.user;
+            console.log(user);
+        })
+        .catch(error => console.error(error));
     }
     return (
         <div className="hero py-20 mt-4 mb-12 bg-base-200 rounded-2xl">
