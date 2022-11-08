@@ -9,7 +9,7 @@ const Header = () => {
     </>
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 py-6">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -20,7 +20,7 @@ const Header = () => {
       </ul>
     </div>
     <Link to='/' className='ml-2'>
-        <img src={logo} alt="" style={{width: '150px'}} />
+        <img src={logo} alt="" width='150px' />
     </Link>
   </div>
   <div className="navbar-center hidden lg:flex">
