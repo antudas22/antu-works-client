@@ -1,22 +1,27 @@
 import React from 'react';
-import banner1 from '../../../assets/banner/banner1.jpg'
-import banner2 from '../../../assets/banner/banner2.jpg'
+import { Link } from 'react-router-dom';
+import banner from '../../../assets/banner/tax-lawyer.jpg'
+import Services from '../Services/Services';
 
 const Home = () => {
     return (
         <div>
-            <div className='flex justify-between'>
-                <img width='635px' src={banner1} alt="" />
-                <img width='635px' src={banner2} alt="" />
+            <div className=''>
+                <img width='100%' src={banner} alt="" />
             </div>
-            <div className='flex my-20'>
-                <div className='ml-8'>
-                    <h1 className='text-4xl font-bold'>Alone we can do so little,<br/> together we can do so much.</h1>
+            <div className='flex my-20 justify-around'>
+                <div className=''>
+                    <h1 className='text-4xl font-bold'>The hardest thing to<br/> understand in the world<br/> is the income tax.</h1>
+                    <h4 className='text-end text-sm'>- Albert Einstein</h4>
                 </div>
-                <div className='ml-36'> 
-                    <p className='mb-4'>Find a comfortable place to work or other activities<br/> comfortably at our place</p>
+                <div className=''> 
+                    <p className='mb-4'>Find a comfortable place to work or other activities<br/> comfortably with me.</p>
                     <button className="btn btn-success text-white">Get Appointment</button>
                 </div>
+            </div>
+            <Services />
+            <div className='flex justify-center'>
+            <Link to='/services'><button className="btn btn-success my-10">Show All</button></Link>
             </div>
         </div>
     );
