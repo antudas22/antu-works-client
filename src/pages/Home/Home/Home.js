@@ -23,6 +23,20 @@ const Home = () => {
             <div className='flex justify-center'>
             <Link to='/services'><button className="btn btn-success my-10">Show All</button></Link>
             </div>
+            <div className='flex justify-around text-center py-20 bg-gray-200 mb-10 rounded-2xl'>
+                <div>
+                    <h3 className='text-4xl font-bold text-sky-500 mb-2'>4.7</h3>
+                    <p>Rated Star in App</p>
+                </div>
+                <div>
+                    <h3 className='text-4xl font-bold text-sky-500 mb-2'>99+</h3>
+                    <p>Pro Advantages</p>
+                </div>
+                <div>
+                    <h3 className='text-4xl font-bold text-sky-500 mb-2'>22K</h3>
+                    <p>Satisfied Customer</p>
+                </div>
+            </div>
         </div>
     );
 };
