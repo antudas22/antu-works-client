@@ -10,7 +10,7 @@ const AllServices = () => {
     }, [])
     return (
         <div className='mb-16'>
-            <div className='text-center mb-10'>
+            <div className='text-center mb-14'>
             <h3 className='inline-block text-2xl font-bold text-muted border-b-4 border-sky-500'>ALL Services</h3>
             </div>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-14 justify-items-center'>
