@@ -1,11 +1,28 @@
 import React from 'react';
 
 const ReviewItemRow = ({review}) => {
-    const {reviewer, photoURL, text} = review;
+    const {_id, reviewer, photoURL, text} = review;
+
+    const handleDelete = id => {
+        const proceed = window.confirm('Are you sure, you want to delete this item?');
+        if(proceed){
+            fetch(`http://localhost:5000/reviews/${id}`, {
+                method: 'DELETE'
+            })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+            })
+        }
+    }
+
     return (
         <div>
             <tr>
         <th>
+            <label>
+                <button onClick={() => handleDelete(_id)} className="btn btn-ghost">X</button>
+            </label>
         </th>
         <td>
           <div className="flex items-center space-x-3">

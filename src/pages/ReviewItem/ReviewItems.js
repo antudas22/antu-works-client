@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ReviewItemRow from './ReviewItemRow';
 
-const ReviewItems = ({details}) => {
+const ReviewItems = () => {
     const [reviews, setReviews] = useState([]);
 
   useEffect(() => {

@@ -11,12 +11,14 @@ const Reviews = ({details}) => {
         const reviewerName = user?.displayName || form.name.value;
         const photoURL = user?.photoURL || form.photoURL.value;
         const text = form.text.value;
+        const email = user?.email;
 
         const review = {
             id: _id,
             name: name,
             reviewer: reviewerName,
             photoURL,
+            email,
             text
         }
 

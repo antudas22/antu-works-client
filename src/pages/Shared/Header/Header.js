@@ -11,6 +11,9 @@ const Header = () => {
       <li className="mr-2">
         <Link to="/login">Login</Link>
       </li>
+      <li className="mr-2">
+        <Link to="/myreviews">My Reviews</Link>
+      </li>
     </>
   );
 
