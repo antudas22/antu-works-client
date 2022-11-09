@@ -10,7 +10,7 @@ const Reviews = ({details}) => {
         const form = e.target;
         const reviewerName = user?.displayName || form.name.value;
         const photoURL = user?.photoURL || form.photoURL.value;
-        const text = form.text.defaultValue;
+        const text = form.text.value;
 
         const review = {
             id: _id,
@@ -19,16 +19,28 @@ const Reviews = ({details}) => {
             photoURL,
             text
         }
+
+        fetch('http://localhost:5000/reviews', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(review)
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+            if(data.acknowledged){
+                alert('Review Submitted')
+                form.reset();
+            }
+        })
+        .catch(error => console.error(error));
     }
 
 
   return (
     <div className="mb-16">
-      <div className="text-center mb-6">
-        <h3 className="inline-block text-2xl font-bold text-muted border-b-4 border-sky-500">
-          Reviews
-        </h3>
-      </div>
       <div className="">
         <form onSubmit={handleSubmitReview}>
             <h2 className="text-center text-2xl font-bold mb-10">Put your Feedback for {name} Service</h2>

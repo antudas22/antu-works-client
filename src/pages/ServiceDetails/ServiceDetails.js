@@ -1,11 +1,13 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import { useLoaderData } from "react-router-dom";
+import ReviewItems from "../ReviewItem/ReviewItems";
 import Reviews from "../Reviews/Reviews";
 
 const ServiceDetails = () => {
   const { _id, name, price, rating, description } = useLoaderData();
-  const details = {_id, name};
+  const details = { _id, name };
+
   return (
     <div>
       <div className="text-center mb-14">
@@ -34,9 +36,15 @@ const ServiceDetails = () => {
           <p>{description}</p>
         </div>
       </div>
-      <Reviews
-       details={details}
-      />
+      <div className="text-center mb-6">
+        <h3 className="inline-block text-2xl font-bold text-muted border-b-4 border-sky-500">
+          Reviews
+        </h3>
+      </div>
+
+      <ReviewItems details={details} />
+                
+      <Reviews details={details} />
     </div>
   );
 };
