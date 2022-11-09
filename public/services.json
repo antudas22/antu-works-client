@@ -1,6 +1,5 @@
 [
     {
-        "_id": "635a0c0b64a6d231228942ae",
         "name": "Individual Income Taxes",
         "img": "https://images.pexels.com/photos/4386372/pexels-photo-4386372.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "price": "20.00",
@@ -8,7 +7,6 @@
         "description": "The individual income tax (or personal income tax) is a tax levied on the wages, salaries, dividends, interest, and other income a person earns throughout the year. The tax is generally imposed by the state in which the income is earned."
     },
     {
-        "_id": "635a0c0b64a6d231228942af",
         "name": "Corporate Income Taxes",
         "img": "https://images.pexels.com/photos/4386369/pexels-photo-4386369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "price": "20.00",
@@ -16,7 +14,6 @@
         "description": "Tax on corporate profits is defined as taxes levied on the net profits (gross income minus allowable tax reliefs) of enterprises. It also covers taxes levied on the capital gains of enterprises."
     },
     {
-        "_id": "635b591a1dafe382a9da8c96",
         "name": "Payroll Taxes",
         "img": "https://images.pexels.com/photos/6863332/pexels-photo-6863332.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "price": "200.00",
@@ -24,7 +21,6 @@
         "description": "The total due every pay period is 15.3% of an individual's wages – half of which is paid by the employee and the other half by the employer. This means that each party pays 6.2% for Social Security up to a wage base limit of $147,000 and 1.45% for Medicare with no limit."
     },
     {
-        "_id": "635b5afc1dafe382a9da8c98",
         "name": "Capital Gains Taxes",
         "img": "https://images.pexels.com/photos/4386366/pexels-photo-4386366.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "price": "150.00",
@@ -32,7 +28,6 @@
         "description": "The capital gains tax is the levy on the profit that an investor makes when an investment is sold. It is owed for the tax year during which the investment is sold.The long-term capital gains tax rates for the 2022 and 2023 tax years are 0%, 15%, or 20% of the profit, depending on the income of the filer. The income brackets are adjusted annually. (See tables below.)An investor will owe long-term capital gains tax on the profits of any investment owned for at least one year. If the investor owns the investment for one year or less, short-term capital gains tax applies. The short-term rate is determined by the taxpayer's ordinary income bracket. For all but the highest-paid taxpayers, that is a higher tax rate than the capital gains rate."
     },
     {
-        "_id": "635b5b691dafe382a9da8c99",
         "name": "Buy-sales Taxes",
         "img": "https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "price": "30.00",
@@ -40,7 +35,6 @@
         "description": "Best Buy is required by law to charge applicable sales taxes for online orders. Where sales tax applies, the order total during your checkout reflects estimated sales tax. The final sales tax charged on your order will be displayed in your order confirmation sent via e-mail. Shipping charges may also be subject to tax in certain states."
     },
     {
-        "_id": "635b5ba51dafe382a9da8c9a",
         "name": "Gross Receipts Taxes",
         "img": "https://images.pexels.com/photos/6863183/pexels-photo-6863183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "price": "20.00",

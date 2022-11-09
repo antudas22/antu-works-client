@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 
 const ServiceCard = ({service}) => {
-    const {name, price, img, rating, description} = service;
+    const {_id, name, price, img, rating, description} = service;
   return (
     <div>
       <div className="card card-compact w-96 bg-base-100 shadow-xl">
@@ -28,7 +28,7 @@ const ServiceCard = ({service}) => {
                 }
             </div>
             <div className="flex justify-center mt-4">
-            <Link><button className="btn btn-success w-80">Details</button></Link>
+            <Link to={`/service/${_id}`}><button className="btn btn-success w-80">Details</button></Link>
             </div>
             <div>
 

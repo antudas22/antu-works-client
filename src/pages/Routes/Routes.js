@@ -3,6 +3,7 @@ import Home from "../Home/Home/Home";
 import AllServices from "../Home/Services/AllServices";
 import Login from "../Login/Login";
 import Register from "../Register/Register";
+import ServiceDetails from "../ServiceDetails/ServiceDetails";
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
             path: '/register',
             element: <Register />
         },
+        {
+            path: '/service/:id',
+            element: <ServiceDetails />
+        }
       ]
     }
   ])
