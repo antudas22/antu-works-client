@@ -1,0 +1,33 @@
+[
+    {
+        "_id": 1,
+        "name": "Sundar Pichai",
+        "img": "https://pbs.twimg.com/profile_images/864282616597405701/M-FEJMZ0_400x400.jpg",
+        "rating": "4.8",
+        "comment": "Good Job"
+    },
+    {
+        "_id": 2,
+        "name": "Satya Nadella",
+        "img": "https://content.fortune.com/wp-content/uploads/2022/02/Satya-Nadella-Microsoft-CEO-Most-Admired.jpg",
+        "comment": "Nice."
+    },
+    {
+        "_id": 3,
+        "name": "Tim Cook",
+        "img": "https://imageio.forbes.com/specials-images/imageserve/61b9144f65931aadf0fc3b9c/Apple-s--CEO-Tim-Cook/960x0.jpg?format=jpg&width=960",
+        "comment": "Well"
+    },
+    {
+        "_id": 4,
+        "name": "Jeff Bezos",
+        "img": "https://www.theladders.com/wp-content/uploads/jeff-bezos-ceo-profile.jpg",
+        "comment": "Very Good"
+    },
+    {
+        "_id": 5,
+        "name": "Parag Agrawal",
+        "img": "https://economictimes.indiatimes.com/thumb/msid-87996102,width-3318,height-2489,resizemode-4,imgsize-359556/parag-agrawal-h.jpg?from=mdr",
+        "comment": "Wonderful"
+    }
+]
