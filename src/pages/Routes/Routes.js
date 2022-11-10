@@ -35,7 +35,7 @@ const router = createBrowserRouter([
         {
             path: '/service/:id',
             element: <ServiceDetails />,
-            loader: ({params}) => fetch(`http://localhost:5000/service/${params.id}`)
+            loader: ({params}) => fetch(`https://antu-works-server.vercel.app/service/${params.id}`)
         },
         {
           path: '/myreviews',

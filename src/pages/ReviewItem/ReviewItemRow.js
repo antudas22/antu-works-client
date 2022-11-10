@@ -6,7 +6,7 @@ const ReviewItemRow = ({review}) => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure, you want to delete this item?');
         if(proceed){
-            fetch(`http://localhost:5000/reviews/${id}`, {
+            fetch(`https://antu-works-server.vercel.app/reviews/${id}`, {
                 method: 'DELETE'
             })
             .then(res => res.json())
