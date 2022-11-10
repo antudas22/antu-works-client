@@ -4,7 +4,14 @@ import logo from "../../../assets/logo/logo.png";
 import { AuthContext } from "../../../contexts/AuthProvider/AuthProvider";
 
 const Header = () => {
-  const {user} = useContext(AuthContext);
+  const {user, logOut} = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logOut()
+    .then()
+    .catch();
+  }
+
   const navMenuItems = (
     <>
       <li className="mr-2">
@@ -23,7 +30,7 @@ const Header = () => {
         <Link to="/blog">Blog</Link>
         </li>
         <li className="mr-2">
-        <Link to="/">Logout</Link>
+            <button onClick={handleLogOut}>Logout</button>
         </li>
         </>
         :

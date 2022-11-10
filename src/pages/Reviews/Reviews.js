@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
 
 const Reviews = ({details}) => {
@@ -67,7 +68,16 @@ const Reviews = ({details}) => {
             className="input input-bordered input-success w-full max-w-xs mr-2"
             required
           />
-          <input className="btn btn-success" type="submit" value="Put Your Review" />
+          {
+            user?.email ?
+            <>
+            <input className="btn btn-success" type="submit" value="Put Your Review" />
+            </>
+            :
+            <Link to='/login'>
+              <button className="btn btn-success"> Login for your feedback!</button>
+            </Link>
+          }
         </form>
       </div>
     </div>
