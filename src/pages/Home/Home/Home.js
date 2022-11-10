@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import banner from '../../../assets/banner/tax-lawyer.jpg'
+import useTitle from '../../../hooks/useTitle';
 import Services from '../Services/Services';
 
 const Home = () => {
+    useTitle('Home')
     return (
         <div>
             <div className=''>

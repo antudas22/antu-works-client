@@ -1,7 +1,9 @@
 import React from 'react';
+import useTitle from '../../hooks/useTitle';
 import ReviewItems from '../ReviewItem/ReviewItems';
 
 const MyReviews = () => {
+  useTitle('My Reviews')
     return (
         <div>
             <div className="text-center mb-6">

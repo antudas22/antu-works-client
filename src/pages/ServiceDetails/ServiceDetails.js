@@ -1,10 +1,12 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import { useLoaderData } from "react-router-dom";
+import useTitle from "../../hooks/useTitle";
 import ReviewItems from "../ReviewItem/ReviewItems";
 import Reviews from "../Reviews/Reviews";
 
 const ServiceDetails = () => {
+  useTitle('Service Details')
   const { _id, name, price, rating, description } = useLoaderData();
   const details = { _id, name };
 
